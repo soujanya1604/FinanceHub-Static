@@ -48,6 +48,7 @@
     <Content Include="html\Index.html" />
     <Content Include="html\Login.html" />
     <Content Include="html\Read.html" />
+    <Content Include="html\style.css" />
     <Content Include="html\Update.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
