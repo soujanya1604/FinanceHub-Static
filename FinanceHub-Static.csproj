@@ -39,6 +39,8 @@
   <ItemGroup>
     <Content Include="html\CrudOperations.html" />
     <Content Include="html\GetStarted.html" />
+    <Content Include="html\images\background.jpg" />
+    <Content Include="html\images\login-icon.png" />
     <Content Include="html\Index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
