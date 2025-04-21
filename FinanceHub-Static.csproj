@@ -37,12 +37,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="html\Create.html" />
     <Content Include="html\CrudOperations.html" />
     <Content Include="html\Delete.html" />
     <Content Include="html\GetStarted.html" />
     <Content Include="html\images\background.jpg" />
     <Content Include="html\images\login-icon.png" />
     <Content Include="html\Index.html" />
+    <Content Include="html\Read.html" />
     <Content Include="html\Update.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
