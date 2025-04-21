@@ -35,8 +35,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="html\" />
+    <Content Include="html\CrudOperations.html" />
+    <Content Include="html\GetStarted.html" />
+    <Content Include="html\Index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
