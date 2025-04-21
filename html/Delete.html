@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete - FinanceHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FinanceHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Charts.html">Data Visualization</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="Login.html">
+                            <img src="images/login-icon.png" alt="Login" style="width: 20px; height: 20px; margin-right: 5px;">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <h1 class="mb-4">Delete Financial Record</h1>
+        <p>This page explains how records could be removed from the database in the final application.</p>
+
+        <p>To delete a record, the system would typically prompt the user to confirm deletion. After confirmation, the selected record would be removed from the database.</p>
+
+        <div class="alert alert-warning">
+            <strong>Example:</strong> This form simulates finding a record to delete.
+        </div>
+
+        <!-- Simulated Find Record Form -->
+        <form>
+            <div class="mb-3">
+                <label for="id" class="form-label">Enter Transaction ID to Delete</label>
+                <input type="number" id="id" name="id" class="form-control" required />
+            </div>
+            <button type="button" class="btn btn-primary" onclick="showRecord()">Find Record</button>
+        </form>
+
+        <!-- Simulated Record Display -->
+        <div id="recordSection" class="mt-5" style="display: none;">
+            <p>Are you sure you want to delete this transaction?</p>
+            <dl class="row">
+                <dt class="col-sm-3">Transaction ID</dt>
+                <dd class="col-sm-9">1024</dd>
+
+                <dt class="col-sm-3">Type</dt>
+                <dd class="col-sm-9">Expense</dd>
+
+                <dt class="col-sm-3">Category</dt>
+                <dd class="col-sm-9">Groceries</dd>
+
+                <dt class="col-sm-3">Amount</dt>
+                <dd class="col-sm-9">$75.00</dd>
+            </dl>
+
+            <button class="btn btn-danger">Confirm Delete</button>
+            <a href="read.html" class="btn btn-secondary ms-2">Cancel</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 FinanceHub Team</p>
+    </footer>
+
+    <!-- JS for simulation -->
+    <script>
+        function showRecord() {
+            document.getElementById("recordSection").style.display = "block";
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
