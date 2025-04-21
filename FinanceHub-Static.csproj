@@ -37,6 +37,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="html\About.html" />
+    <Content Include="html\Charts.html" />
     <Content Include="html\Create.html" />
     <Content Include="html\CrudOperations.html" />
     <Content Include="html\Delete.html" />
